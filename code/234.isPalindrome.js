@@ -28,4 +28,16 @@ var isPalindrome = function (head) {
     return true;
 };
 
+var isPalindrome = function (head) {
+    if (!head || !head.next) {
+        return true;
+    }
+    const headArr = [];
+    while (head) {
+        headArr.push(head.val);
+        head = head.next;
+    }
+    return headArr.join('') === headArr.reverse().join('')
+};
+
 exports.isPalindrome = isPalindrome;
