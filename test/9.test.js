@@ -12,4 +12,7 @@ describe('isPalindrome', () => {
     it('isPalindrome 0', () => {
         expect(isPalindrome(0)).toBe(true);
     });
+    it('isPalindrome 1000000001', () => {
+        expect(isPalindrome(1000000001)).toBe(true);
+    });
 });
